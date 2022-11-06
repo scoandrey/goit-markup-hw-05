@@ -28,7 +28,7 @@
           <ul class="nav-header">
             <li class="item-nav">
               <a
-                class="nav-studio link"
+                class="nav-studio current link"
                 href="https://scoandrey.github.io/goit-markup-hw-04/"
                 >Студія</a
               >
@@ -72,7 +72,14 @@
       <section class="section-main">
         <div class="container">
           <h1 class="about-name">Ефективні рішення для вашого бізнесу</h1>
-          <button class="pointer btn" type="button">Замовити послугу</button>
+          <button class="pointer btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="close-btn" data-modal-close>x</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section-middle">
@@ -132,29 +139,38 @@
         <div class="container">
           <h2 class="picture-name-one">Чим ми займаємося</h2>
           <ul class="picture-name-list">
-            <li class="img-device one">
+            <li class="img-device desctop-item">
               <img
                 src="./images/img.jpg"
                 alt="Лэптоп"
                 width="370"
                 height="294"
               />
+              <div class="desctop">
+                <p class="desctop-name">десктопні додатки</p>
+              </div>
             </li>
-            <li class="img-device two">
+            <li class="img-device mobil-item">
               <img
                 src="./images/img1.jpg"
                 alt="Смартфон"
                 width="370"
                 height="294"
               />
+              <div class="mobil">
+                <p class="mobil-name">мобільні додатки</p>
+              </div>
             </li>
-            <li class="img-device three">
+            <li class="img-device disign-item">
               <img
                 src="./images/img2.jpg"
                 alt="Планшет"
                 width="370"
                 height="294"
               />
+              <div class="disign">
+                <p class="disign-name">дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -580,5 +596,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
